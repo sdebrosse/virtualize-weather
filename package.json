@@ -1,0 +1,23 @@
+{
+  "name": "virtualize-weather",
+  "version": "0.1.0",
+  "description": "AWS Lambda function to invoke weather API for Virtualize demo",
+  "main": "index.js",
+  "scripts": {
+    "build": "./build.sh",
+    "create": "./provisioning/awsCreate.sh virtualizeWeather",
+    "deploy": "./provisioning/awsUpdate.sh virtualizeWeather",
+    "invoke": "./provisioning/awsInvoke.sh virtualizeWeather",
+    "localInvoke": "node ./provisioning/localInvoke.js",
+    "test": "jasmine",
+    "test:watch": "watch jasmine ./"
+  },
+  "author": "Ryan Ray <ryan@ryanray.me>",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "request-promise": "^0.4.3"
+  },
+  "devDependencies": {
+    "proxyquire": "~1.7.2"
+  }
+}

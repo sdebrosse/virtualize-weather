@@ -1,0 +1,29 @@
+{
+  "session": {
+    "sessionId": "SessionId.1",
+    "application": {
+      "applicationId": "amzn1.ask.skill.1"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.X"
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.1",
+    "locale": "en-US",
+    "timestamp": "2017-03-31T21:54:18Z",
+    "intent": {
+      "name": "GetWeatherForZipIntent",
+      "slots": {
+        "Zip": {
+          "name": "Zip",
+          "value": "90210"
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
